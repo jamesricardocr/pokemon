@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Pocket Monk;
+    src: url(./Pocket\ Monk.otf);
+}
+
+body{
+    font-family: Pocket Monk;
+    background-color: rgb(61, 61, 61);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cartas-pokemon{
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url('./fondocarta.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+.pokemon h2 {
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #A01D0B;
+}
+
+.pokemon-nombre{
+    background-color: #E28E48;
+    border: solid 2px #A01D0B;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pokemon-nombre h2{
+    color: #A01D0B;
+    font-size: 25px;
+}
+
+
+.pokemon p {
+    color: #ededed;
+    font-family: sans-serif;
+    font-size: 8px;
+}
+
+.pokemon-imagen img{
+    width: 70%;
+    padding: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .pokemon-nombre {
+        padding: 5px;
+    }
+    .pokemon h2 {
+        font-size: 14px;
+    }
+    .pokemon p{
+        font-size: 5px;
+    }
+}
