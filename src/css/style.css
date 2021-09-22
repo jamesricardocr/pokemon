@@ -31,7 +31,7 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-image: url('./fondocarta.png');
+    background-image: url('../img/fondocarta.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
